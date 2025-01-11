@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects Showcase</title>
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Pixel Art Style CSS File -->
+    <link rel="stylesheet" href="CSS/projectscss/projects.css" />
+    <!-- Google Fonts (Pixelated Style) -->
+    <link
+      href="Fonts/Press_Start_2P/PressStart2P-Regular.ttf"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img
+      src="Images/Background/MOON CLOUD.png"
+      alt="Moving Cloud"
+      class="cloud"
+    />
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #222"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">BJ Strydom</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header text-center py-5">
+      <h1 class="text-uppercase">My Projects </h1>
+    </header>
+
+    <!-- Games Built Section -->
+    <section class="games py-5">
+      <div class="container">
+        <h2 class="section-title  art-banner">Games I Built</h2>
+        <div class="row gy-4">
+          <div class="col-md-4">
+            <div class="profile-place-card">
+              <video
+                id="Bounce Mini Game"
+                class="game-preview"
+                muted
+                onclick="enlargeVideo('Bounce Mini Game')"
+                style="cursor: pointer"
+              >
+                <source
+                  src="Images/Projects/Games/unknown_2025.01.09-19.17_clip_1.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <p class="mt-2">Bounce Mini Game</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="profile-place-card">
+              <video
+                id="They Hunt Mini game"
+                class="game-preview"
+                muted
+                onclick="enlargeVideo('They Hunt Mini game')"
+                style="cursor: pointer"
+              >
+                <source
+                  src="Images/Projects/Games/unknown_2025.01.09-19.22_clip_1.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <p class="mt-2">They Hunt Mini game</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="profile-place-card">
+              <video
+                id="My first Fps"
+                class="game-preview"
+                muted
+                onclick="enlargeVideo('My first Fps')"
+                style="cursor: pointer"
+              >
+                <source
+                  src="Images/Projects/Games/unknown_2025.01.09-23.16_clip_1_clip_1.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <p class="mt-2">My first Fps</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for enlarging video -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="videoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <video id="modalVideo" class="w-100" controls autoplay></video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Art Section -->
+    <section class="art py-5">
+      <div class="container">
+        <h2 class="section-title art-banner">My Game Art</h2>
+        <div class="row gy-4">
+          <!-- Art Image 1 -->
+          <div class="col-6 col-md-4">
+            <img
+              src="Images/Projects/Art/mox head.png"
+              alt="Art 1"
+              class="art-item"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-bs-slide-to="0"
+            />
+          </div>
+          <!-- Art Image 2 -->
+          <div class="col-6 col-md-4">
+            <img
+              src="Images/Projects/Art/mox suit sketch.png"
+              alt="Art 2"
+              class="art-item"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-bs-slide-to="1"
+            />
+          </div>
+          <!-- Art Image 3 -->
+          <div class="col-6 col-md-4">
+            <img
+              src="Images/Projects/Art/moxy was here photo.png"
+              alt="Art 3"
+              class="art-item"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-bs-slide-to="2"
+            />
+          </div>
+          <!-- Art Image 4 -->
+          <div class="col-6 col-md-4">
+            <img
+              src="Images/Projects/Art/hero.gif"
+              alt="Art 4"
+              class="art-item"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-bs-slide-to="3"
+            />
+          </div>
+          <!-- Art Image 5 -->
+          <div class="col-6 col-md-4">
+            <img
+              src="Images/Projects/Art/FLOORSET 4.png"
+              alt="Art 5"
+              class="art-item"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-bs-slide-to="4"
+            />
+          </div>
+          <!-- Art Image 6 -->
+          <div class="col-6 col-md-4">
+            <img
+              src="Images/Projects/Art/floor.png"
+              alt="Art 6"
+              class="art-item"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-bs-slide-to="5"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for displaying Art images in a carousel -->
+    <div
+      class="modal fade"
+      id="artModal"
+      tabindex="-1"
+      aria-labelledby="artModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="artCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="Images/Projects/Art/mox head.png"
+                    alt="Art 1"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Images/Projects/Art/mox suit sketch.png"
+                    alt="Art 2"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Images/Projects/Art/moxy was here photo.png"
+                    alt="Art 3"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Images/Projects/Art/hero.gif"
+                    alt="Art 4"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Images/Projects/Art/FLOORSET 4.png"
+                    alt="Art 5"
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="Images/Projects/Art/floor.png"
+                    alt="Art 6"
+                    class="d-block w-100"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#artCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#artCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Essays Section -->
+   <section class="essays py-5">
+    <div class="container">
+      <h2 class="section-title art-banner">My Essays</h2>
+      <div class="row gy-4">
+     <!-- Essay 1 with PDF preview -->
+     <div class="col-md-4">
+      <div
+        class="essay-preview" 
+        data-bs-toggle="modal"
+        data-bs-target="#pdfModal"
+        data-bs-pdf="/Images/Projects/Essay/AI the great inovation of man.pdf"
+      >
+        <div class="pdf-preview">
+          <img
+            src="Images/Projects/Essay/AI the great inovation of man.png"
+            alt="Essay 1 Preview"
+            class="img-fluid"
+          />
+          <p>AI The Great</p>
+        </div>
+      </div>
+    </div>
+
+        <!-- Essay 2 with PDF preview -->
+        <div class="col-md-4">
+          <div
+            class="essay-preview"
+            data-bs-toggle="modal"
+            data-bs-target="#pdfModal"
+            data-bs-pdf="/Images/Projects/Essay/Juskei_Main Evidence 3.pdf""
+          >
+            <div class="pdf-preview">
+              <img
+                src="Images/Projects/Essay/Screenshot 2025-01-09 234440.png"
+                alt="Essay 2 Preview"
+                class="img-fluid"
+              />
+              <p>Jukskei</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Essay 3 with PDF preview -->
+        <div class="col-md-4">
+          <div
+            class="essay-preview"
+            data-bs-toggle="modal"
+            data-bs-target="#pdfModal"
+            data-bs-pdf="/Images/Projects/Essay/“Fiela se kind” an old tale for modern.pdf"
+          >
+            <div class="pdf-preview">
+              <img
+                src="Images/Projects/Essay/Screenshot 2025-01-09 234725.png"
+                alt="Essay 3 Preview"
+                class="img-fluid"
+              />
+              <p>Fiela Se Kind</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <!-- Modal for displaying PDF -->
+      <div
+      class="modal fade"
+      id="pdfModal"
+      tabindex="-1"
+      aria-labelledby="pdfModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe id="pdfViewer" src="" width="100%" height="600px"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Footer Section -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 BJ Portfolio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+    <!-- Bootstrap JS and Custom JS Files -->
+    <!-- jQuery JS File -->
+    <script src="JS/JQuerie3.71.js"></script>
+
+    <!-- Bootstrap JS File -->
+    <script src="JS/bootstrap.min.js"></script>
+
+    <!-- GSAP JS File -->
+    <script src="JS/gsap.min.js"></script>
+
+    <!-- Projects JS File -->
+    <script src="JS/Projects/projects.js"></script>
+  </body>
+</html>
